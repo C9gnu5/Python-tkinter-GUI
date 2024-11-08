@@ -9,7 +9,7 @@ def div(): re.config(text="Quotient:"), res.config(text=f"{int(txtF.get())/int(t
 def intDiv(): re.config(text="Integer Quotient:"), res.config(text=f"{int(txtF.get())//int(txtS.get())}")
 def expo(): re.config(text="Exponential:"), res.config(text=f"{int(txtF.get())**int(txtS.get())}")
 def rem(): re.config(text="Remainder:"), res.config(text=f"{int(txtF.get())%int(txtS.get())}")
-def clear(): txtF.delete(0, 'end'), txtS.delete(0, 'end'), res.config(text="0"), txtF.focus_set()
+def clear(): txtF.delete(0, 'end'), txtS.delete(0, 'end'), res.config(text="0"), re.config(text="Result"), txtF.focus_set()
 
 Label(mstr, text="PyCalcuThon", font=("Rockwell", 17, 'bold')).pack(side='top')
 Label(mstr, text="First Number:", font=("Times New Roman", 14, 'bold')).place(relx=0.01, rely=0.085, anchor='nw')
